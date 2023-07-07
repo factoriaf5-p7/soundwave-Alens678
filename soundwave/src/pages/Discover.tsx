@@ -5,7 +5,7 @@ import { ReactComponent as Albums} from '../assets/albums.svg'
 import { ReactComponent as More} from '../assets/more.svg'
 import covers from '../assets/covers.jpg'
 
-export const LandingPage2=()=> {
+export const Discover=()=> {
     return (
       <div>
         <div>

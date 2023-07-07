@@ -1,7 +1,12 @@
-export const Button=()=> {
+import { Button, Space } from 'antd';
+
+export const ButtonJ=()=> {
   return (
     <div>
-      <button>Join Now</button>
+      <Space>
+        <Button type="primary">Join Now</Button>
+      </Space>
+      
     </div>
   )
 }

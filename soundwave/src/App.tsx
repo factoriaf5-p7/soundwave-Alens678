@@ -1,18 +1,20 @@
-// import { useState } from 'react'
-import { RegisteringPage } from "./pages/RegisteringPage"
-import { LandingPage } from "./pages/LandingPage"
-import { LandingPage2 } from "./pages/LandingPage2"
+import { Routes, Route } from 'react-router-dom'
+import {Home } from './pages/Home.tsx'
+import {Discover } from './pages/Discover.tsx'
+import {Join } from './pages/Join.tsx'
 
-function App() {
-  // const [count, setCount] = useState(0)
 
+export const App=()=> {
   return (
     <>
-      <LandingPage/>
-      <LandingPage2/>
-      <RegisteringPage/>
+      
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/discover' element={<Discover />} />
+        <Route path='/join' element={<Join />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+

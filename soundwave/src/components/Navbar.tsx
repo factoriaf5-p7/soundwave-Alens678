@@ -1,16 +1,27 @@
 import logo from '../assets/logo.png';
+import {Link } from "react-router-dom";
 
 export const Navbar=()=> {
   return (
     <div>
       <nav>
-        <article>
+        <ul>
+          <li>
+          <Link to="/">
             <img src={logo} height="20" width="20" alt="logo" />
-            <h4>Soundwave</h4>
-        </article>
-        <p>Discover</p>
-        <p>Join</p>
+            <h6>Soundwave</h6>
+          </Link>             
+          </li>
+          <li>
+            <Link to="/discover" >Discover</Link>
+          </li>
+          <li>
+          <Link to="/join">Join</Link>
+          </li>
+        </ul>
+        
       </nav>
     </div>
   )
 }
+

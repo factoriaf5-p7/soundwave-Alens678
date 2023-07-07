@@ -1,15 +1,18 @@
 import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
-import { Button } from "../components/Button"
+import { ButtonJ } from "../components/Button"
+// import { Outlet } from "react-router-dom"
 
-export const LandingPage=()=> {
+export const Home=()=> {
     return (
       <div>
         <Navbar/>
           <h2>Feel The Music</h2>
           <h3>Stream over 20 thousand songs with one click</h3>
-          <Button/>
+          <ButtonJ/>
+          {/* <Outlet/> */}
         <Footer/>
+        
       </div>
     )
   }

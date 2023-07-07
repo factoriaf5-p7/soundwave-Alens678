@@ -2,7 +2,7 @@ import { RegisterForm } from "../components/RegisterForm"
 import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
 
-export const RegisteringPage=()=> {
+export const Join=()=> {
     return (
       <div>
         <Navbar/>

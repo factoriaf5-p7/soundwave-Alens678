@@ -1,4 +1,4 @@
-import { Button } from "./Button"
+import { ButtonJ } from "./Button"
 import { useState } from "react";
 
 export const RegisterForm=()=> {
@@ -20,7 +20,7 @@ export const RegisterForm=()=> {
         <label htmlFor="">Password:
           <input type="text" value={Password} onChange={e => setPassword(e.target.value)} />
         </label>
-        <Button/>
+        <ButtonJ/>
       </form>
     </div>
   )
