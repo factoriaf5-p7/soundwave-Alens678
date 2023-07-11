@@ -1,4 +1,3 @@
-import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
 import { ReactComponent as Microphone} from '../assets/microphone.svg'
 import { ReactComponent as Albums} from '../assets/albums.svg'
@@ -9,7 +8,6 @@ export const Discover=()=> {
     return (
       <div>
         <div>
-        <Navbar/>
         <h2>Discover new music</h2>
         <Microphone/>
         <Albums/>

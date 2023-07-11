@@ -1,0 +1,89 @@
+@primary-color: #1890ff; 
+@link-color: #1890ff; 
+@success-color: #52c41a; 
+@warning-color: #faad14; 
+@error-color: #f5222d; 
+@font-size-base: 14px; 
+@heading-color: #2796ff; 
+
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+}
+:root{
+    background-color: #2F303A;
+    color:white;
+}
+
+.custom-form .ant-form-item-label label {
+  color: #fff;
+}
+
+.password-input input {
+  background: none;
+}
+.titles{
+  color: #fff;
+  font-weight: 900;
+  span{
+    color:#d3007b;
+    font-weight: 900;
+  }
+}
+
+.titles2{
+  color: #fff;
+  font-weight: 900;
+  
+}
+.circle-1 {
+  position: fixed;
+  top: -10%;
+  left: 20%;
+  // transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-color: #3457b21a;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-2 {
+   
+  position: fixed;
+  bottom: -10px;
+  left: -10px;
+  width: 120px;
+  height: 120px;
+  background-color:#bc3a801a  ;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .circle-1 {
+    width: 350px;
+    height: 350px;
+    top: -20%;
+    left: 26%;
+  }
+  .circle-2 {
+    width: 500px;
+    height: 500px;
+    left: -50px;
+    bottom: -50px;
+  }
+
+  .form{
+       transform: translateX(60%) translateY(-3%);
+  }
+
+  .join-title{
+    transform: translateX(15%) translateY(450%);
+    
+  }
+
+}

@@ -1,27 +1,47 @@
 import logo from '../assets/logo.png';
-import {Link } from "react-router-dom";
+import React, { useState } from 'react';
+import type { MenuProps } from 'antd';
+import { Menu } from 'antd';
+import { Link } from 'react-router-dom';
 
-export const Navbar=()=> {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-          <Link to="/">
-            <img src={logo} height="20" width="20" alt="logo" />
-            <h6>Soundwave</h6>
-          </Link>             
-          </li>
-          <li>
-            <Link to="/discover" >Discover</Link>
-          </li>
-          <li>
-          <Link to="/join">Join</Link>
-          </li>
-        </ul>
-        
-      </nav>
-    </div>
-  )
-}
+const items: MenuProps['items'] = [
+  {
+    label: (
+      <Link to="/" className="home-link">
+        <div style={{ display: 'flex', alignItems: 'center'}}>
+          <img src={logo} height="40px" alt="logo" />
+          <span style={{ marginLeft: '8px' }}>Soundwave</span>
+        </div>
+      </Link>
+    ),
+    key: 'soundwave',
+    
+  },
+  {
+    label: (
+      <a href="../discover" rel="Discover Hero Page">
+        Discover
+      </a>
+    ),
+    key: 'discover',
+  },
+  {
+    label: (
+      <a href="../join " rel="Registering Page">
+        Join
+      </a>
+    ),
+    key: 'join',
+  },
+];
 
+export const Navbar: React.FC = () => {
+  const [current, setCurrent] = useState('');
+
+  const onClick: MenuProps['onClick'] = (e) => {
+    console.log('click ', e);
+    setCurrent(e.key);
+  };
+
+  return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{background:'#2F303A',color:'white', display:'flex', justifyContent:'space-evenly'}} />;
+};
