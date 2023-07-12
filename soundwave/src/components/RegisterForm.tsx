@@ -1,69 +1,69 @@
 import { ButtonJ } from "./Button"
 import {Form, Input,Col} from "antd";
 
-const onFinish = (values: any) => {
-  console.log("Success:", values);
-};
-
-const onFinishFailed = (errorInfo: any) => {
-  console.log("Failed:", errorInfo);
-};
 
 export function RegisterForm() {
+  
   return (
         
-    <Col xs={24} lg={12} style={
-      { display: 'flex',
-        justifyContent: 'center',
+    <Col xs={24} 
+    style={
+      { 
         background: '#202027',
         padding: '10px',
-        borderRadius: '8px', 
+        borderRadius: '8px',
+            
       }}
     >
       <Form
-        name="basic"
-        labelCol={{ span: 8 }}
-        style={{ maxWidth: 'auto'}}
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-        autoComplete="off"
+        layout="vertical"
+        style={{ 
+          maxWidth: '100%',
+         }}
+       
         className="custom-form"
-      >
+     
+      > 
+        <div className="form-item">
           <Form.Item 
-            label="Name:" 
-            name="Name"
-            labelAlign="left"
-          >
-            <Input  style={{ background: 'none' }} />
+                labelAlign="left"
+                label="Name:" 
+                name="Name"
+              >
+                <Input  style={{ background: 'none', color: 'white'}} />
           </Form.Item>
+        </div>
+        <div className="form-item">
           <Form.Item
-            name="email"
-            label="Email:"
-            labelAlign="left"
-            rules={[
-              {
-                type: "email",
-              },
-            ]}
-          >
-            <Input  style={{ background: 'none' }} />
+                name="email"
+                label="Email:"
+                labelAlign="left"
+                rules={[
+                  {
+                    type: "email",
+                  },
+                ]}
+              >
+              <Input  style={{ background: 'none', color: 'white' }} />
           </Form.Item>
+        </div>
+        <div className="form-item">
           <Form.Item 
-            label="Password:" 
-            name="password"
-            labelAlign="left"
-          >
-          <Input.Password 
-          style={{ background: 'none' }}
-          className="password-input" 
-          />
+              labelAlign="left"
+              label="Password:" 
+              name="password"
+            >
+            <Input.Password 
+            style={{ background: 'none' }}
+            className="password-input" 
+            />
           </Form.Item>
-          <Form.Item >
-            <ButtonJ style={{width:'100%'}}>Join Now</ButtonJ>
-          </Form.Item>
-        </Form>
-      </Col>
+        </div>
+        <Form.Item  >
+          <ButtonJ style={{width:'100%'}}>Join Now</ButtonJ>
+        </Form.Item>
+      </Form>
+    </Col>
       
     
   );

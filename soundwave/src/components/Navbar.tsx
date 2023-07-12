@@ -11,19 +11,18 @@ export const Navbar= () => {
             background: '#2F303A',
             color: 'white',
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'center'            
           }}>
         <Menu className='menu'
           mode="horizontal"
           selectedKeys= {['false']}
-          inlineCollapsed={false}
           items={[
             {
               label: (
                 <Link to="../" className="home-link">
                   <div style={{ display: 'flex', alignItems: 'center'}}>
                     <img src={logo} height="40px" alt="logo" />
-                    <span style={{ marginLeft: '8px' }}>Soundwave</span>
+                    <span style={{ marginLeft: '1%',fontSize:'16px' }}>Soundwave</span>
                   </div>
                 </Link>
               ),

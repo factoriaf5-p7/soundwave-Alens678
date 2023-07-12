@@ -1,47 +1,58 @@
 import { ReactComponent as Twitter} from '../assets/twitter.svg'
 import { ReactComponent as Facebook} from '../assets/icons8-facebook-30.svg'
-import React, { useState } from 'react';
-import type { MenuProps } from 'antd';
-import { Menu } from 'antd';
+import {Menu} from 'antd';
 
-const items: MenuProps['items'] = [
-  {
-    label: 'About Us',
-    key: 'about',
-  },
-  {
-    label: 'Contact',
-    key: 'contact',
-  },
-  {
-    label: 'Twitter',
-    key: 'twitter',
-    icon: <Twitter/>,
-  },
-  {
-    label: 'Facebook',
-    key: 'facebook',
-    icon: <Facebook/>,
-  },
- 
- 
-];
+export const Footer= () => {
 
-export const Footer: React.FC = () => {
-  const [current, setCurrent] = useState('');
-
-  const onClick: MenuProps['onClick'] = (e) => {
-    console.log('click ', e);
-    setCurrent(e.key);
-  };
-
-  return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{
-    background: '#202027',
-    color: 'white',
-    position: 'fixed',
-    bottom: 0,
-    left: 0,
-    width: '100%',
-  }} />;
+  return (
+    <>
+    <div  className='footer-container'>
+      <Menu 
+        className='footer'
+        mode="horizontal"
+        selectedKeys= {['false']}
+        
+        items={[
+          {
+            label: (<div className='footer-items'><span>About Us</span></div>),
+            key: 'about',
+          },
+          {
+            label: (<div className='footer-items'><span>Contact</span></div>),
+            key: 'contact',
+          },
+        ]}
+       
+      >
+      </Menu>
+      <Menu 
+        className='footer'
+        selectedKeys= {['false']}
+        mode="horizontal"
+        items={[ 
+          {
+            label: (
+            <div className='footer-items'>
+            <Twitter/>
+            <span>Twitter</span>
+            </div>
+            ),
+            key: 'twitter',
+          },
+          {
+            label:  (
+              <div className='footer-items'>
+              <Facebook/>
+              <span>Facebook</span>
+              </div>
+              ),
+            key: 'facebook',
+          },
+          ]}
+      >
+      </Menu>
+    </div>
+  </>     
+  )
 };
 

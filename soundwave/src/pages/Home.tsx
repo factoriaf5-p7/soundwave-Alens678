@@ -1,6 +1,6 @@
 import { ButtonJ } from "../components/Button"
 import girl  from "../assets/landing-page-girl.png"
-import { Col, Layout} from 'antd';
+import { Col} from 'antd';
 import { Title } from "../components/Titles";
 
 
@@ -20,13 +20,9 @@ export const Home=()=> {
             <ButtonJ style={{marginLeft:'3vh'}}>Join Now</ButtonJ>
           </Col> 
         </div>
-        <Layout style={{background:'#2F303A'}}> 
-          <Col xs={0} lg={12}>
+        <Col xs={0} lg={12}>
             <img className= 'hero-img' src={girl} alt="Model"/>
-          </Col>
-                
-        </Layout>       
-        
+        </Col>
       </div>
     )
   }

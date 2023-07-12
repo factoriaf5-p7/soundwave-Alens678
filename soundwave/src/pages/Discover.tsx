@@ -7,7 +7,7 @@ import { IconsMenu } from "../components/IconsMenu"
 export const Discover=()=> {
     return (
       <div>
-        <div className="desktop-left">
+        <div className="discover-left">
           <Title>Discover new music</Title>
           <article className="icons-container">
             <IconsMenu/>
