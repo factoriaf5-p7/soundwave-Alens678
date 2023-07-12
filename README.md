@@ -35,8 +35,7 @@ Para esta app, he trabajado con ant design como framework de diseño, y para el 
 ## Enlace de despliegue
 
 El despliegue lo he heacho con vercel, ya que github pages me presentaba un poco de problema. El link de acceso es:
-
-      ![Arr link](https://react-project-cyan-nine.vercel.app/)
+      <a href="https://react-project-cyan-nine.vercel.app/">Deploy</a>
 
 
 
