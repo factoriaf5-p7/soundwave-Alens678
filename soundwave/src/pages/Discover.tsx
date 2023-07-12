@@ -1,21 +1,23 @@
 import { Footer } from "../components/Footer"
-import { ReactComponent as Microphone} from '../assets/microphone.svg'
-import { ReactComponent as Albums} from '../assets/albums.svg'
-import { ReactComponent as More} from '../assets/more.svg'
+
 import covers from '../assets/covers.jpg'
+import {  Title } from "../components/Titles"
+import { IconsMenu } from "../components/IconsMenu"
 
 export const Discover=()=> {
     return (
       <div>
-        <div>
-        <h2>Discover new music</h2>
-        <Microphone/>
-        <Albums/>
-        <More/>
-        <p>By joining you can benefit by listening to the latest albums released</p>3
-        <img src={covers} alt="Covers image" />
-        <Footer/>
+        <div className="desktop-left">
+          <Title>Discover new music</Title>
+          <article className="icons-container">
+            <IconsMenu/>
+          </article>
+          <p>By joining you can benefit by listening to the latest albums released</p>
+         </div>
+        <img className= 'covers' src={covers} alt="Covers image" />
+           
+      <Footer/>
       </div>
-      </div>
+      
     )
   }

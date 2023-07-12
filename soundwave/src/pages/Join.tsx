@@ -3,6 +3,8 @@ import { RegisterForm } from "../components/RegisterForm"
 import {Col} from "antd";
 
 
+
+
 export const Join=()=> {
     return (
       <>
