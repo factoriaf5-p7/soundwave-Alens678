@@ -22,15 +22,15 @@ Han contactado contigo por tu reputación como maquetadora web, y te piden que l
 
 Para esta app, he trabajado con ant design como framework de diseño, y para el diseño de la pagina he implementado el framwork vite con la librería de React y todo se ha escrito en typescrypt.
 
-## Capturas de las paginas creadas
+## Capturas de las páginas creadas
 
-##Home page
+## Home page
 ![image](https://github.com/factoriaf5-p7/soundwave-Alens678/assets/97367970/93cd81eb-fcdc-4e94-abfa-33f64b48612e)
 
-##Discover page
+## Discover page
 ![image](https://github.com/factoriaf5-p7/soundwave-Alens678/assets/97367970/6f077046-b29d-4a66-9de6-c0894b4b1855)
 
-##Join page
+## Join page
 ![image](https://github.com/factoriaf5-p7/soundwave-Alens678/assets/97367970/b8be36a8-597b-4b2c-b3ee-06a41d6deaff)
 
 
