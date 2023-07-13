@@ -20,50 +20,27 @@ Han contactado contigo por tu reputación como maquetadora web, y te piden que l
 
 ## Recursos
 
-<details>
-  <summary>Imágenes</summary>
+Para esta app, he trabajado con ant design como framework de diseño, y para el diseño de la pagina he implementado el framwork vite con la librería de React y todo se ha escrito en typescrypt.
 
-    - landing-page-girl.png
-    - covers.jpg
-    - more.svg
-    - albums.svg
-    - logo.png
-    - microphone.svg
-    - twitter.svg
+## Capturas de las páginas creadas
+
+## Home page
+![image](https://github.com/factoriaf5-p7/soundwave-Alens678/assets/97367970/93cd81eb-fcdc-4e94-abfa-33f64b48612e)
+
+## Discover page
+![image](https://github.com/factoriaf5-p7/soundwave-Alens678/assets/97367970/6f077046-b29d-4a66-9de6-c0894b4b1855)
+
+## Join page
+![image](https://github.com/factoriaf5-p7/soundwave-Alens678/assets/97367970/b8be36a8-597b-4b2c-b3ee-06a41d6deaff)
 
 
-</details>
+## Enlace de despliegue
 
-- **[Mockup](https://simplonline-v3-prod.s3.eu-west-3.amazonaws.com/media/file/pdf/46391d6c-b766-4ed3-a121-72c9b2a15960.pdf)**
-- **[Carta gráfica](https://simplonline-v3-prod.s3.eu-west-3.amazonaws.com/media/file/pdf/0b528713-7dbc-4261-b4b7-0070dd4e7021.pdf)**
-- **[How to CSS Style in React](https://www.robinwieruch.de/react-css-styling/)**
-- **[Styled-components](https://styled-components.com/)**
-- **[React-Bootstrap](https://react-bootstrap.github.io/)**
-- **[React Semantic UI Tutorial for Beginners](https://www.robinwieruch.de/react-semantic-ui-tutorial/)**
-- **[MUI Core: Ready to use components, free forever](https://mui.com/core/)**
-- **[Ant Design](https://ant.design/)**
-- **[React - Una biblioteca de JavaScript para construir interfaces de usuario](https://es.reactjs.org/)**
-- **[Vite-Typescript](https://vitejs.dev/guide/)**
-- **[React-Router](https://reactrouter.com/en/main/start/overview)**
+El despliegue lo he heacho con vercel, ya que github pages me presentaba un poco de problema. El link de acceso es:
+      <a href="https://react-project-cyan-nine.vercel.app/">Deploy</a>
 
 
 
-## Entregables
 
-- Repositorio de GitHub.
-- Enlace del despliegue.
 
-## Modalidad
-
-- Trabajo individual.
-- Este sprint, durará una semana. La entrega será el 13/07/2023
-- Presentación: Se hará una presentación en conjunto, de cada framework de CSS en React, puesto en práctica. Pero no obviará a nadie de presentar su proyecto.
-
-## Rúbrica de evaluación
-
-|  | 1 | 2 | 3 |
-| --- | --- | --- | --- |
-| Indicador | Deficiente | Regular | Excelente |
-| Maquetar una aplicación | La maquetación no es conforme al mockoup. Hay diferencias notables con el prototipo. | La maquetación respeta la carta gráfica. Pero no termina de ser totalmente responsive. | La maquetación respeta la carta gráfica de la empresa. Adaptar las interfaces al tipo de dispositivo teniendo en cuenta la experiencia del usuario y, en el caso de los dispositivos móviles, las características ergonómicas. |
-| Desarrollar una interfaz de usuario web dinámica | Las interacciones del lado del cliente (front-end) no funcionan. | Las interacciones del lado del cliente (front-end) si funcionan. | La web está alineada con la experiencia de usuario, incluyendo la experiencia móvil. La arquitectura de la aplicación se ajusta a las buenas prácticas de desarrollo. Los test garantizan que la página web cumplen los requisitos descritos en las especificaciones. |
-| Crear una interfaz de usuario web estática y adaptable | No se aplican los cambios necesarios solicitados en la descripción de necesidades. | Se aplican los cambios necesarios solicitados en la descripción de necesidades. | La interfaz se realiza conforme al diseño de la aplicación. La página web respeta la carta gráfica de la empresa. Se respetan las buenas prácticas de estructuración. La app es accesible desde el navegador, incluso desde un móvil. Se adapta al tamaño de la pantalla. |
+|
